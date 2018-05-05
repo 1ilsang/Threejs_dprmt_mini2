@@ -1,6 +1,6 @@
 function air_crash(a) {
     var img_airp = document.getElementById('img_airp');
-    img_airp.src = 'img/crash.gif';
+    img_airp.src = 'img/game_over_chu.gif';
     clearTimeout(opst_movex_time);
     clearTimeout(opst_movex_time1);
     clearTimeout(opst_movex_time2);
