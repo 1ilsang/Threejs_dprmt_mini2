@@ -6,160 +6,229 @@
     <script type='text/javascript' src="./js/game2.js"></script>
     <script type='text/javascript' src="./js/crash.js"></script>
     <style>
-        .IMGN1{
-            position:absolute;
-            left:50px;
-            top:400px;
-            margin-left:0px;
-            margin-top:0px;
+        .IMGN1 {
+            /* 플레이어 */
+            position: absolute;
+            left: 50px;
+            top: 400px;
+            margin-left: 0px;
+            margin-top: 0px;
             width: 100px;
         }
-        .IMGN2{
-            display:none;
-            position:absolute;
-            left:1400px;
-            top:400px;
-            margin-left:0px;
-            margin-top:0px;
+
+        .IMGN2 {
+            display: none;
+            position: absolute;
+            left: 100px;
+            top: 400px;
+            margin-left: 0px;
+            margin-top: 0px;
             width: 100px;
         }
-        .IMGN3{
-            width:100%;
-            height:100%;
-            background:url('img/iu.jpg');
+
+        .IMGN3 {
+            width: 75%;
+            height: 85%;
+            float: left;
+            background: url('img/iu.jpg');
         }
-        .IMGN4{
-            display:none;
-            position:absolute;
-            left:1400px;
-            top:400px;
-            margin-left:0px;
-            margin-top:0px;
+
+        .IMGN4 {
+            display: none;
+            position: absolute;
+            left: 500px;
+            top: 400px;
+            margin-left: 0px;
+            margin-top: 0px;
             width: 100px;
 
         }
-        .IMGN5{
-            display:none;
-            position:absolute;
-            left:1400px;
-            top:400px;
-            margin-left:0px;
-            margin-top:0px;
+
+        .IMGN5 {
+            display: none;
+            position: absolute;
+            left: 500px;
+            top: 400px;
+            margin-left: 0px;
+            margin-top: 0px;
             width: 100px;
         }
-        .IMGN6{
-            display:none;
-            position:absolute;
-            left:1400px;
-            top:400px;
-            margin-left:0px;
-            margin-top:0px;
+
+        .IMGN6 {
+            display: none;
+            position: absolute;
+            left: 500px;
+            top: 400px;
+            margin-left: 0px;
+            margin-top: 0px;
             width: 100px;
         }
-        .IMGN7{
-            display:none;
-            position:absolute;
-            left:1400px;
-            top:400px;
-            margin-left:0px;
-            margin-top:0px;
+
+        .IMGN7 {
+            display: none;
+            position: absolute;
+            left: 1400px;
+            top: 400px;
+            margin-left: 0px;
+            margin-top: 0px;
             width: 100px;
         }
-        .DIVN1{
-            z-index:40;
-            position:fixed;
-            left:50%;
-            top:50%;
-            width:300px;
-            height:100px;
-            text-align:center;
-            color:white;
-            font-size:50;
-            font-weight:900;
-            margin-left:-150px;
-            margin-top:-50px;
+
+        .DIVN1 {
+            z-index: 40;
+            position: fixed;
+            left: 40%;
+            top: 40%;
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            font-size: 50;
+            font-weight: 900;
+            margin-left: -150px;
+            margin-top: -50px;
 
         }
-        .IMGN8{
-            display:none;
-            position:absolute;
-            left:1400px;
-            top:400px;
-            margin-left:0px;
-            margin-top:0px;
+
+        .IMGN8 {
+            display: none;
+            position: absolute;
+            left: 1400px;
+            top: 400px;
+            margin-left: 0px;
+            margin-top: 0px;
             width: 100px;
         }
-        .DIVN2{
-            z-index:40;
-            position:absolute;
-            left:1%;
-            top:1%;
-            width:300px;
-            height:100px;
-            text-align:right;
-            color:white;
-            font-size:50;
-            font-weight:900;
 
+        .DIVN2 {
+            z-index: 40;
+            position: absolute;
+            left: 1%;
+            top: 1%;
+            width: 300px;
+            height: 100px;
+            text-align: right;
+            color: white;
+            font-size: 50;
+            font-weight: 900;
         }
-        .IMGN9{
-            width: 100px;
 
-            position:absolute;
-            left:350px;
-            top:20px;
-            opacity:0.5;
+        .IMGN9 {
+            /* 목숨 1 */
+            width: 70px;
+            position: absolute;
+            left: 350px;
+            top: 20px;
+            opacity: 0.5;
         }
-        .IMGN10{
-            width: 100px;
 
-            position:absolute;
-            left:450px;
-            top:20px;
-            opacity:0.5;
+        .IMGN10 {
+            /* 목숨 2 */
+            width: 70px;
+            position: absolute;
+            left: 450px;
+            top: 20px;
+            opacity: 0.5;
         }
-        .DIVN3{
-            display:none;
-            z-index:40;
-            position:fixed;
-            left:50%;
-            top:50%;
-            width:500px;
-            height:100px;
-            text-align:center;
-            color:white;
-            font-size:50;
-            font-weight:900;
-            margin-left:-250px;
-            margin-top:-50px;
 
+        .DIVN3 {
+            display: none;
+            z-index: 40;
+            position: fixed;
+            left: 40%;
+            top: 40%;
+            width: 500px;
+            height: 100px;
+            text-align: center;
+            color: white;
+            font-size: 50;
+            font-weight: 900;
+            margin-left: -250px;
+            margin-top: -50px;
+        }
+        .BOARD {
+            position: absolute;
+            width: 23%;
+            margin-left: 75%;
+            margin-right: 2%;
+        }
+        table {
+            width: 100%;
+            border-top: 3px solid #444444;
+            border-collapse: collapse;
+        }
+        th {
+            border-bottom: 3px solid #444444;
+            padding: 25px;
+        }
+        td {
+            border-bottom: 1px solid #444444;
+            padding: 10px;
         }
     </style>
 
 </head>
 
 <body>
-<div class="IMGN3">
-    <img id="img_airp" src="img/blog_char.gif" class="IMGN1">
-    <img src="img/depromeet.png" class="IMGN2">
-    <img id="img_airp1" src="img/depromeet.png" class="IMGN4">
-    <img id="img_airp2" src="img/depromeet.png" class="IMGN5">
-    <img id="img_airp3" src="img/depromeet.png" class="IMGN6">
-    <img id="img_airp4" src="img/depromeet.png" class="IMGN7">
-    <img id="img_airp5" src="img/depromeet.png" class="IMGN8">
-    <img id="img_airp6" src="img/blog_char.gif" class="IMGN9">
-    <img id="img_airp7" src="img/blog_char.gif" class="IMGN10">
-    <div style="color:white;font-size:50;font-weight:900">
-        점수
+<div>
+    <div class="IMGN3">
+        <img id="img_airp" src="img/main1.gif" class="IMGN1">
+        <img src="img/depromeet.png" class="IMGN2">
+        <img id="img_airp1" src="img/depromeet.png" class="IMGN4">
+        <img id="img_airp2" src="img/depromeet.png" class="IMGN5">
+        <img id="img_airp3" src="img/depromeet.png" class="IMGN6">
+        <img id="img_airp4" src="img/depromeet.png" class="IMGN7">
+        <img id="img_airp5" src="img/depromeet.png" class="IMGN8">
+        <img id="img_airp6" src="img/main1.png" class="IMGN9">
+        <img id="img_airp7" src="img/main1.png" class="IMGN10">
+        <div style="margin-left:1%;white;font-size:50;font-weight:900">
+            점수
+        </div>
+        <div id="div2" class="DIVN2">
+            0
+        </div>
+        <div id="div1" onclick="start_game()" class="DIVN1">
+            <button>START</button>
+        </div>
+        <div id="div3" onclick="restart_game()" class="DIVN3">
+            GAME OVER! RESTART CLICK!
+        </div>
     </div>
-    <div id="div2" class="DIVN2">
-        0
-    </div>
-    <div id="div1" onclick="start_game()" class="DIVN1">
-        START
-    </div>
-    <div id="div3" onclick="restart_game()" class="DIVN3">
-        GAME OVER! RESTART CLICK!
+    <div class="BOARD">
+        <table width="100%">
+            <th colspan="3">SCORE BOARD</th>
+            <tr bgcolor="aqua">
+                <td width="30%">NAME</td>
+                <td>STAGE</td>
+                <td>SCORE</td>
+            </tr>
+            <tr>
+                <td>일상철</td>
+                <td>2</td>
+                <td>34342</td>
+            </tr>
+            <tr>
+                <td>이상철</td>
+                <td>4</td>
+                <td>33333</td>
+            </tr>
+            <tr>
+                <td>삼상철</td>
+                <td>1</td>
+                <td>32222</td>
+            </tr>
+            <tr>
+                <td>사상철</td>
+                <td>5</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td>오상철</td>
+                <td>3</td>
+                <td>012</td>
+            </tr>
+        </table>
+        <br>
+        <img width="100%" src="img/iu.jpg">
     </div>
 </div>
 </body>
