@@ -8,11 +8,8 @@ function air_crash(a) {
     clearTimeout(opst_movex_time4);
     clearTimeout(opst_movex_time5);
     clearTimeout(game_point_init);
-    
     our_airp = our_airp - 1;
     
-    
-    game_count = 0;
     clearInterval(movex_time);
     clearInterval(movey_time);
     x_on = 1;
@@ -21,7 +18,7 @@ function air_crash(a) {
         over_game();
     }
     else {
-        setTimeout(start_game, 3000);
+        setTimeout(start_game, 3000, 0);
     }
     
 }

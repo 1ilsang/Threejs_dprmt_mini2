@@ -9,8 +9,8 @@ var x_on = 0;//가로방향 키보드 눌림 감지
 var y_on = 0;//세로방향 키보드 눌림 감지
 
 
-var br_width = window.outerWidth * 0.7; //브라우저 가로크기
-var br_height = window.innerHeight - 53;//브라우저 세로크기
+var br_width = window.outerWidth * 0.65; //브라우저 가로크기
+var br_height = window.innerHeight * 0.7;//브라우저 세로크기
 
 document.onkeydown = onkey_press;
 document.onkeyup = onkey_clear;
@@ -21,14 +21,14 @@ function onkey_press() {
         savex_key = event.keyCode;
         if (x_on != 1) {
             x_on = 1;
-            movex_time = setInterval(keyx_move, 1);
+            movex_time = setInterval(keyx_move, 0.5);
         }
     }
     else if (event.keyCode == 38 || event.keyCode == 40) {
         savey_key = event.keyCode;
         if (y_on != 1) {
             y_on = 1;
-            movey_time = setInterval(keyy_move, 1);
+            movey_time = setInterval(keyy_move, 0.5);
         }
     }
 }
