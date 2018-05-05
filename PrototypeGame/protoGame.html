@@ -30,7 +30,7 @@
             width: 75%;
             height: 85%;
             float: left;
-            background: url('img/iu.jpg');
+            background: url('img/bg.png');
         }
 
         .IMGN4 {
@@ -76,17 +76,23 @@
 
         .DIVN1 {
             z-index: 40;
-            position: fixed;
-            left: 40%;
-            top: 40%;
-            width: 300px;
-            height: 100px;
+            position: absolute;
+            /*left: 40%;*/
+            /*top: 40%;*/
+            width: 100%;
+            height: 100%;
             text-align: center;
             font-size: 50;
             font-weight: 900;
-            margin-left: -150px;
-            margin-top: -50px;
+            /*margin-left: -23%;*/
+            margin-top: -6%;
+            background-color: gray;
+            opacity: 0.6;
 
+            display:flex;
+            flex-direction:column;
+            /*align-items:center;*/
+            justify-content: center;
         }
 
         .IMGN8 {
@@ -101,6 +107,7 @@
 
         .DIVN2 {
             z-index: 40;
+            /*float: left;*/
             position: absolute;
             left: 1%;
             top: 1%;
@@ -146,9 +153,8 @@
             margin-top: -50px;
         }
         .BOARD {
-            position: absolute;
             width: 23%;
-            margin-left: 75%;
+            margin-left: 76%;
             margin-right: 2%;
         }
         table {
@@ -164,30 +170,43 @@
             border-bottom: 1px solid #444444;
             padding: 10px;
         }
+        .DIVMAIN {
+            z-index: 40;
+            position: absolute;
+            left: 40%;
+            top: 40%;
+            text-align: center;
+            font-size: 50;
+            font-weight: 900;
+            /*margin-left: -23%;*/
+            margin-top: -6%;
+            background-color: gray;
+            opacity: 0.6;
+        }
     </style>
 
 </head>
 
 <body>
-<div>
+<div style="">
     <div class="IMGN3">
         <img id="img_airp" src="img/main1.gif" class="IMGN1">
-        <img src="img/depromeet.png" class="IMGN2">
-        <img id="img_airp1" src="img/depromeet.png" class="IMGN4">
-        <img id="img_airp2" src="img/depromeet.png" class="IMGN5">
-        <img id="img_airp3" src="img/depromeet.png" class="IMGN6">
-        <img id="img_airp4" src="img/depromeet.png" class="IMGN7">
-        <img id="img_airp5" src="img/depromeet.png" class="IMGN8">
+        <img src="img/worker_card.png" class="IMGN2">
+        <img id="img_airp1" src="img/worker_night.png" class="IMGN4">
+        <img id="img_airp2" src="img/worker_card.png" class="IMGN5">
+        <img id="img_airp3" src="img/worker_night.png" class="IMGN6">
+        <img id="img_airp4" src="img/worker_card.png" class="IMGN7">
+        <img id="img_airp5" src="img/worker_boss.png" class="IMGN8">
         <img id="img_airp6" src="img/main1.png" class="IMGN9">
         <img id="img_airp7" src="img/main1.png" class="IMGN10">
-        <div style="margin-left:1%;white;font-size:50;font-weight:900">
+        <div style="margin-left:1%;white;font-size:50;font-weight:900;color: white;">
             점수
         </div>
         <div id="div2" class="DIVN2">
             0
         </div>
         <div id="div1" onclick="start_game()" class="DIVN1">
-            <button>START</button>
+            <button style="font-size: 200px">READY?</button>
         </div>
         <div id="div3" onclick="restart_game()" class="DIVN3">
             GAME OVER! RESTART CLICK!
@@ -228,8 +247,14 @@
             </tr>
         </table>
         <br>
-        <img width="100%" src="img/iu.jpg">
+        <img width="100%" src="img/depromeet.png">
+        <label style="font-size: 30px">DEBUG</label>
+        <br>
+        <button onclick="stage_message()" style="font-size: 30px">NEXT</button>
     </div>
+</div>
+<div style="margin-top: 7%; position: absolute;">
+    만든이 : 디프만 4기 1팀 이상철, 최병규, 이동혁, 고정민, 최진주, 채명준
 </div>
 </body>
 </html>

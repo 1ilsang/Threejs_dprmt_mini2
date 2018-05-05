@@ -27,12 +27,13 @@ var game_stage = 0;//게임 스테이지 저장 변수
 var game_count = 0;//게임 레벨 카운터
 var game_point = 0;//점수
 var our_airp = 3;
+var start;
 
 function start_game() {
     img_airp.src = './img/main1.gif';
     div1.style.display = 'none';
     opst_init();
-    
+    start = 1;
     x_on = 0;
     y_on = 0;
     our_airp_inve();
@@ -53,19 +54,24 @@ function restart_game() {
 function point_count() {
     game_point = game_point + 1;
     div2.innerHTML = game_point;
-    game_point_init = setTimeout(point_count, 1);
+    if(start === 1){
+        game_point_init = setTimeout(point_count, 1);
+    }
 }
 
 function stage_message() {
     div1.style.display = 'block';
-    div1.innerHTML = game_stage + ' STAGE CLEAR!';
+    start = 0;
+    div1.innerHTML = '<button style="font-size: 150px; color: red; margin-top: 15%;" onclick="re_play">'
+                        + game_stage + ' STAGE CLEAR!' + '</button><br>계속해서 진행하시려면 클릭해 주세요!';
     opst_init();
-    setTimeout(re_play, 2000);
+    // setTimeout(re_play, 3000);
     
 }
 
 function re_play() {
     div1.style.display = 'none';
+    point_count();
     game_stage_j();
 }
 
