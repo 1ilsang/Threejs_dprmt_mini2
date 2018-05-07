@@ -7,6 +7,7 @@ function air_crash(a) {
     clearTimeout(opst_movex_time3);
     clearTimeout(opst_movex_time4);
     clearTimeout(opst_movex_time5);
+    clearTimeout(opst_movex_core);
     clearTimeout(game_point_init);
     our_airp = our_airp - 1;
     
