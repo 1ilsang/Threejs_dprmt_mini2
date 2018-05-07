@@ -31,7 +31,7 @@ var start;
 function start_game(v) {
     img_airp.src = './img/main1.gif';
     div1.style.display = 'none';
-    divstage.innerHTML ='점수: <br>스테이지 : ' + `${game_stage + v}`;
+    divstage.innerHTML = '점수: <br>스테이지 : ' + `${game_stage + v}`;
     opst_init();
     start = 1;
     x_on = 0;
@@ -39,7 +39,6 @@ function start_game(v) {
     our_airp_inve();
     game_stage_j(v);
     point_count();
-    console.log(`start_game : ${game_stage}, v : ${v}`);
 }
 
 function restart_game() {
@@ -59,7 +58,7 @@ function point_count() {
     game_point += game_stage;
     div2.innerHTML = game_point;
     divnextpoint.innerHTML = game_count + '/' + game_stage * 4;
-    if(start === 1){
+    if (start === 1) {
         game_point_init = setTimeout(point_count, 1);
     }
 }
@@ -68,7 +67,7 @@ function stage_message() {
     div1.style.display = 'block';
     start = 0;
     div1.innerHTML = '<button style="font-size: 150px; color: red; margin-top: 15%;" onclick="re_play">'
-                        + game_stage + ' STAGE CLEAR!' + '</button><br>카운트 속도 증가!<br>계속해서 진행하시려면 클릭해 주세요!';
+        + game_stage + ' STAGE CLEAR!' + '</button><br>카운트 속도 증가!<br>계속해서 진행하시려면 클릭해 주세요!';
     // divstage.innerHTML ='점수: <br>스테이지 : ' + `${game_stage + 1}`;
     
     opst_init();
@@ -220,25 +219,23 @@ function opst_move_f1() {
         opst_left_px = 0;
         document.styleSheets[0].rules[1].style.marginLeft = opst_left_px + 'px';
         opst_top_px = br_height * Math.random() - 400;
-    
+        
         document.styleSheets[0].rules[1].style.marginTop = opst_top_px + 'px';
         opst_move_f1();
         if (game_count == game_stage * 4) {
             game_count = 0;
             stage_message();
-        
+            
         }
     }
     
 }
-
 function opst_move_f2() {
     document.styleSheets[0].rules[3].style.display = 'block';
     opst_left_px1 = opst_left_px1 - opst_move_d;
     document.styleSheets[0].rules[3].style.marginLeft = opst_left_px1 + 'px';
     opst_movex_time1 = setTimeout(opst_move_f2, 1);
     if (opst_left_px1 <= -br_width) {
-        //game_count=game_count+1;//게임 레벨 카운터 증가
         clearTimeout(opst_movex_time1);
         opst_left_px1 = 0;
         document.styleSheets[0].rules[3].style.marginLeft = opst_left_px1 + 'px';

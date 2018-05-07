@@ -16,6 +16,17 @@ function air_crash(a) {
     y_on = 1;
     if (our_airp == 0) {
         over_game();
+        fetch('http://sample.bmaster.kro.kr/contacts', {
+            method: 'GET',
+            mode: 'cors'
+        }).then((res) => {
+            console.log('hihi');
+            res.json().then(json => console.log(json));
+        }).catch((e) => {
+                console.log('hihi2');
+                console.log(e);
+            }
+        );
     }
     else {
         setTimeout(start_game, 3000, 0);
