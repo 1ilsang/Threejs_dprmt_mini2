@@ -19,9 +19,9 @@
 
 #### 간단한 게임 조작 및 설명
 
-<img src="gd1.png" width="30%" />
-<img src="gd2.png" width="30%" />
-<img src="gd3.png" width="30%" />
+<img src="gd1.png" width="40%" />
+<img src="gd2.png" width="40%" />
+<img src="gd3.png" width="40%" />
 
 #### 게임 화면
 
