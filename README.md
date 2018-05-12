@@ -1,7 +1,7 @@
 디프만 2차 미니프젝 '인내의 숲'
 ===
 
-<img src="./PrototypeGame/img/index.jpeg" width="30%" />
+<img src="./PrototypeGame/img/index.jpeg" width="50%" />
 
 >프론트 작업.
 >
@@ -9,8 +9,9 @@
 >
 >Three.js 를 사용해봐서 재밌었다.
 
-<img src="./PrototypeGame/img/description1.jpeg" width="30%" />
+<img src="./PrototypeGame/img/description1.jpeg" width="70%" />
 
-#### 간단한 게임 조작
+#### 간단한 게임 조작 및 설명
+#### 
 
-<img src="./PrototypeGame/img/victory_chu.gif" width="30%" />
+<img src="./PrototypeGame/img/victory_chu.gif" width="10%" />
